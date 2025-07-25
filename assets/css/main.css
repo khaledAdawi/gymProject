@@ -1,0 +1,202 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* أسود غامق */
+}
+
+.topbar {
+    font-size: 0.85rem;
+    background-color: #111;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #111;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #eefb13;
+}
+
+.badge {
+    font-size: 10px;
+}
+
+
+.carousel-slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-box {
+    max-width: 50%;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-img {
+    max-width: 35%;
+}
+
+.animated-img {
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff80; /* رمادي شفاف */
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff; /* دائرة بيضاء نشطة */
+}
+
+ /* Basic hidden state */
+.text-box, .product-img img {
+    opacity: 0;
+}
+
+  /* Animation when slide becomes active */
+.carousel-item.active .text-box {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.carousel-item.active .product-img img {
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+  /* Optional: Reset animation when slide hidden */
+.carousel-item:not(.active) .text-box,
+.carousel-item:not(.active) .product-img img {
+    animation: none;
+    opacity: 0;
+}
+
+  /* Keyframes as قبل */
+@keyframes slideInLeft {
+    from { transform: translateX(-60px); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(60px); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+.product-card {
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.3s ease;
+    position: relative;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-img,
+  .hover-img {
+    width: 100%;
+    transition: 0.3s ease;
+  }
+
+  .hover-img {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .product-card:hover .hover-img {
+    opacity: 1;
+  }
+
+  .product-card:hover .main-img {
+    opacity: 0;
+  }
+
+  .quick-view {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 2;
+  }
+
+  .product-card:hover .quick-view {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  .hover-icons {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 5;
+  }
+
+  .hover-icons i {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .hover-icons i:hover {
+    background-color: #fdd835;
+  }
+
+  .product-card:hover .hover-icons {
+    right: 10px;
+    opacity: 1;
+  }
+
+  .rating {
+    font-size: 14px;
+  }

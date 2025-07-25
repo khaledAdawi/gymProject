@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GymFit</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="./assets/css/main.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+<!-- Top Info Bar - Gymex Style -->
+<div class="topbar bg-dark text-white py-1 small">
+    <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
+      <div class="text-center text-md-start w-100">
+        <span>Your order can still be shipped today</span>
+        <a href="#" class="text-warning fw-bold text-decoration-none ms-1">Order Now</a>
+      </div>
+      <div class="d-none d-md-block text-end w-100 text-white-50 small">
+        Worldwide shipping &nbsp;|&nbsp; <span class="text-white">Gymex@domain.com</span>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Navbar -->
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+    <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-3" href="#">
+        <img src="./assets/img/logo.png" alt="Logo" width="200" class="me-2">
+        
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Page</a>
+        </li>
+        </ul>
+
+        <!-- Icons -->
+        <!-- Icons & Sign In -->
+<div class="d-flex align-items-center gap-3">
+
+    <!-- Search Icon -->
+    <a href="#" class="text-dark"><i class="bi bi-search fs-5"></i></a>
+
+    <!-- Sign In -->
+    <a href="#" class="text-dark d-flex align-items-center text-decoration-none">
+    <i class="bi bi-person fs-5 me-1"></i>
+    <span class="fw-normal">Sign In / Register</span>
+    </a>
+
+    <!-- Wishlist -->
+    <a href="#" class="position-relative text-dark">
+    <i class="bi bi-heart fs-5"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white">0</span>
+    </a>
+
+    <!-- Cart -->
+    <a href="#" class="position-relative text-dark">
+    <i class="bi bi-cart fs-5"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white">0</span>
+    </a>
+</div>
+
+    </div>
+    </div>
+</nav>
+
+
+
+
+
+<!-- Hero Section -->
+<div id="mainCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
+    <!-- Indicators (dots) -->
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+        <div class="carousel-slide d-flex align-items-center" style="background-image: url('./assets/img/slider11.jpg');">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-box text-white">
+            <p class="small-text">BENEFITS SAVE 10%</p>
+            <h1 class="main-title">BODY DOING<br>PUSHUP</h1>
+            <a href="#" class="btn btn-warning mt-3">Shop Now →</a>
+            </div>
+            <div class="product-img">
+            <img src="./assets/img/slider1.png" alt="Product" class="img-fluid animated-img">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+        <div class="carousel-slide d-flex align-items-center" style="background-image: url('./assets/img/slider22.jpg');">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-box text-white">
+            <p class="small-text">50% OFF FIRST ORDER</p>
+            <h1 class="main-title">PROTEIN<br>POWDER 100%</h1>
+            <a href="#" class="btn btn-warning mt-3">Shop Now →</a>
+            </div>
+            <div class="product-img">
+            <img src="./assets/img/slider2.png" alt="Protein" class="img-fluid animated-img">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+        <div class="carousel-slide d-flex align-items-center" style="background-image: url('./assets/img/slider3.jpg');">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-box text-white">
+            <p class="small-text">GET AN EXTRA 10% OFF</p>
+            <h1 class="main-title">DIET PROTIEN<br>SHAKES</h1>
+            <a href="#" class="btn btn-warning mt-3">Shop Now →</a>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    </div>
+
+    
+</div>
+
+<!-- Best Seller Section -->
+<section class="best-seller py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">BEST SELLER</h2>
+      <div class="row g-4 justify-content-center">
+  
+        <!-- Product Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card position-relative border p-3 text-center">
+            
+  
+            <!-- Product Image -->
+            <div class="img-container position-relative overflow-hidden">
+              <img src="assets/img/bestSeller1.jpg" alt="product" class="img-fluid main-img mb-3 w-100">
+              <img src="assets/img/bestSeller11.jpg" alt="hover" class="img-fluid hover-img position-absolute top-0 start-0 w-100">
+            </div>
+  
+            <!-- Hover Icons -->
+            <div class="hover-icons position-absolute top-50 start-50 translate-middle text-center">
+              <button class="btn btn-dark btn-sm mb-2">Quick View</button>
+              <div class="icon-set">
+                <i class="bi bi-heart me-2"></i>
+                <i class="bi bi-arrow-left-right"></i>
+              </div>
+            </div>
+  
+            <!-- Text Content -->
+            <p class="text-muted mt-3 mb-1">BodyTech</p>
+            <h6 class="fw-bold mb-1">Cameron Brink Bundle</h6>
+            <div class="rating text-warning mb-1">
+              ★★★★☆ <span class="text-muted fs-6">(1)</span>
+            </div>
+            <p class="fw-bold text-dark">$40.00 - $60.00</p>
+          </div>
+        </div>
+  
+        <!-- Repeat Product Card 3 times with different images/texts -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card position-relative border p-3 text-center">
+            
+            <div class="img-container position-relative overflow-hidden">
+              <img src="assets/img/bestSeller2.jpg" alt="product" class="img-fluid main-img mb-3 w-100">
+              <img src="assets/img/bestSeller22.jpg" alt="hover" class="img-fluid hover-img position-absolute top-0 start-0 w-100">
+            </div>
+            <div class="hover-icons position-absolute top-50 start-50 translate-middle text-center">
+              <button class="btn btn-dark btn-sm mb-2">Quick View</button>
+              <div class="icon-set">
+                <i class="bi bi-heart me-2"></i>
+                <i class="bi bi-arrow-left-right"></i>
+              </div>
+            </div>
+            <p class="text-muted mt-3 mb-1">BodyTech</p>
+            <h6 class="fw-bold mb-1">PumpMode Nitric Oxide</h6>
+            <div class="rating text-warning mb-1">★★★★★ <span class="text-muted fs-6">(1)</span></div>
+            <p class="fw-bold text-dark">$250.00</p>
+          </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card position-relative border p-3 text-center">
+            
+            <div class="img-container position-relative overflow-hidden">
+              <img src="assets/img/bestSaller3.jpg" alt="product" class="img-fluid main-img mb-3 w-100">
+              <img src="assets/img/bestSeller33.jpg" alt="hover" class="img-fluid hover-img position-absolute top-0 start-0 w-100">
+            </div>
+            <div class="hover-icons position-absolute top-50 start-50 translate-middle text-center">
+              <button class="btn btn-dark btn-sm mb-2">Quick View</button>
+              <div class="icon-set">
+                <i class="bi bi-heart me-2"></i>
+                <i class="bi bi-arrow-left-right"></i>
+              </div>
+            </div>
+            <p class="text-muted mt-3 mb-1">Carb Blockers</p>
+            <h6 class="fw-bold mb-1">Essential Amino 9</h6>
+            <div class="rating text-warning mb-1">★★★★☆ <span class="text-muted fs-6">(1)</span></div>
+            <p class="fw-bold text-dark">$100.00 <del class="text-muted">$150.00</del></p>
+          </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card position-relative border p-3 text-center">
+            
+            <div class="img-container position-relative overflow-hidden">
+              <img src="assets/img/bestSeller4.jpg" alt="product" class="img-fluid main-img mb-3 w-100">
+              <img src="assets/img/bestSeller44.jpg" alt="hover" class="img-fluid hover-img position-absolute top-0 start-0 w-100">
+            </div>
+            <div class="hover-icons position-absolute top-50 start-50 translate-middle text-center">
+              <button class="btn btn-dark btn-sm mb-2">Quick View</button>
+              <div class="icon-set">
+                <i class="bi bi-heart me-2"></i>
+                <i class="bi bi-arrow-left-right"></i>
+              </div>
+            </div>
+            <p class="text-muted mt-3 mb-1">Multivitamins</p>
+            <h6 class="fw-bold mb-1">Bucked Up Racked</h6>
+            <div class="rating text-warning mb-1">★★★★★ <span class="text-muted fs-6">(1)</span></div>
+            <p class="fw-bold text-dark">$116.00 <del class="text-muted">$200.00</del></p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
